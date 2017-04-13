@@ -1,7 +1,11 @@
-A possible approach to building Micro Services using Apache Camel.
+# A Possible Approach For Building Micro Services Using Apache Camel.
 
-The Use Case
-Acme bank wants to modernize their credit application portfolio
+## Example Use Case
+Acme bank wants to modernize it's credit application portfolio using a micro services based architecture.
+The example is organized along the following lines.
 
-Represents a service responsible for retrieving various aspects of customer data
- * from several internal systems on behalf of other services.
+* Each individual credit product (Ex creditcard, Loan, HELOC, Mortgage) is built as a separate service.
+
+* Common business logic will be built as services. (Ex Customer profile retrieval, Credit Bureau verification, Adjudication submition).
+
+* Each Service will be exposed via a REST or JMS interface.
